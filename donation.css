@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Righteous&display=swap');
+
+*{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+.navbar{
+    padding: 10px;
+    font-size: 21px;
+	/* Stick The navbar above */
+	position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+	/* Stick The navbar above */
+}
+
+.card{
+	display: grid;
+	grid-template-columns: 300px;
+	grid-template-rows: 300px;
+	overflow: hidden;
+	width: 300px;
+	height: 300px;
+	box-shadow: 0 0 40px rgba(0,0,0);
+    margin: 20px;
+}
+.card img{
+	width: 100%;
+	grid-area: 1 / 1 / span 1 / span 1;
+	transition: 0.3s ease-out;
+}
+.card p{
+	z-index: 111;
+	color: #fff;
+	grid-area: 1 / 1 / span 1 / span 1;
+}
+.card .text{
+	z-index: 111;
+	color: #fff;
+	grid-area: 1 / 1 / span 1 / span 1;
+}
+.text{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	place-items: center;
+	justify-content: center;
+	font-family: permanent marker;
+	font-size: 1em;
+	text-align: center;
+	transition: 0.3s ease-out;
+}
+.card:hover img{
+	transform: scale(1.2, 1.2);
+}
+.card:hover .text{
+	background-color: rgba(0,0,0,.5);
+}
+
+.mybtn{
+    position: absolute;
+    bottom: 10px;
+    left: 14%;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    width: 72%;
+}
+
+.sbtn{
+    font-size: 20px !important;
+    background-color: #FC6D6D !important;
+    color: black !important;
+    font-weight: bold !important;
+    padding: 10px;
+}
+
+.flex-cont{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 93vh;
+    flex-wrap: wrap;
+	margin-top: 7%;
+}
+.navbar-brand{
+    width: 50px;
+}
+
+
+@media screen and (max-width:415px){
+	.flex-cont{
+		margin-top: 23%;
+	}
+}
