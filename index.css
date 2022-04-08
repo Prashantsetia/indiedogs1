@@ -9,7 +9,7 @@
     font-size: 21px;
 
     /* Stick The navbar above */
-	position: fixed;
+	position: fixed !important;
   top: 0;
   width: 100%;
   z-index: 5;
@@ -21,7 +21,8 @@
 }
 
 .cont{
-    height: 90vh;
+    /* height: 90vh; */
+    height: 100vh;
     position: relative;
 }
 
@@ -42,7 +43,8 @@
     position: absolute;
     z-index: 3;
     width: 400px;
-    top: 5%;
+    /* top: 5%; */
+    top: 14%;
     left: 10%;
 }
 
@@ -264,16 +266,16 @@ transform: translate(-50%, -50%) scale(1);
 @media screen and (max-width:415px){
   
   .cont{
-    height: 92vh;
+    height: 98vh;
   }
   .cont-img{
     width: 230px;
-    top: 5%;
+    top: 20%;
     left: 23%;
   }
 
   .wrapper{
-    margin-top: 40%;
+    margin-top: 65%;
     right: 2%;
   }
 
